@@ -73,10 +73,7 @@ export default function LoginPage() {
     }));
   };
 
-  const handleTestCredentials = () => {
-    setUserDetails({ email: "user@example.com", password: "password" });
-    setError({});
-  };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -198,7 +198,7 @@ const Dashboard = () => {
                       </button>
                     </div>
                   </div>
-                  <img src={item.url} alt={item.title} className="h-full w-full object-contain rounded-md mb-4" />
+                  <img src={item.url} alt={item.title} className="object-cover rounded-md mb-4 h-45 w-50" />
                   <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
                 </div>
               ))
