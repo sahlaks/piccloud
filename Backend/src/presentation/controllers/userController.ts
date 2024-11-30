@@ -52,13 +52,14 @@ export class UserController {
       if (result.status) {
         res.cookie("access_token", result.accesstoken, {
           httpOnly: true,
-          secure: false,
-          sameSite: "lax",
+          secure: true,
+          sameSite: "none",
         });
         res.cookie("refresh_token", result.refreshtoken, {
           httpOnly: true,
-          secure: false,
-          sameSite: "lax",
+          secure: true,
+          sameSite: "none",
+
         });
         return res.status(ENUM.OK).json({ success: true, data: result.data });
       } else {
