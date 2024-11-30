@@ -3,7 +3,8 @@ import toast from "react-hot-toast";
 import { generateAccessToken, userLogout } from "../API/userApi";
 
 export const axiosInstance = axios.create({
-     baseURL:'http://localhost:5000',
+    // baseURL:'http://localhost:5000',
+     baseURL:'https://piccloud.shop',   
      headers:{
          'Content-Type':'application/json'
      },

@@ -35,6 +35,11 @@ const createServer = () => {
 
     app.use('/api', userRouter);
 
+    app.get('/', (req: Request, res: Response) => {
+      res.send('Welcome to the PicCloud API!');
+    });
+
+    
     //error middleware
     app.use((err: any, req: Request, res: Response, next: NextFunction) => {
       console.error(err.stack);
